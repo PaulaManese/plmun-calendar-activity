@@ -1,0 +1,399 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+	* {
+	font-family: Open Sans;
+	}
+	
+	
+	body {
+		font-family: Tahoma;
+	}
+
+	.nav{
+		background: #DE847B;
+		color: #DEB3AD;
+		height: 60px;
+		font-family: sans-serif;
+
+		display: flex;
+		flex-wrap:wrap;
+		align-items: center;
+	}
+
+	.nav-title{
+		width: 30%;
+		background: rgb(237, 223, 223);
+		padding: 20px 0px;
+		text-align: center;
+
+	}
+
+	.nav-menu{
+		width: 100%;
+	}
+
+	.nav-menu ul{
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.nav-menu ul li {
+		padding: 0px 30px;
+		color: #0c0909;
+		font-size: 18px;
+		list-style-type: none;
+		cursor: pointer;
+	}
+
+	.nav-menu ul li:hover{
+		color: #150f0f;
+		font-weight: bold;
+	}
+
+	#calendar {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+	}
+
+	#calendar tr, #calendar tbody {
+		grid-column: 1 / -1;
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		width: 100%;
+	}
+
+	header {
+		text-align: center;
+		grid-column: 1 / -1;
+		font-size: 130%;
+		font-weight: bold;
+		padding: 10px 0;
+	}
+
+	#calendar a {
+		color: #8e352e;
+		text-decoration: none;
+	}
+
+	#calendar td, #calendar th {
+		padding: 5px;
+		box-sizing:border-box;
+		border: 1px solid #ccc;
+	}
+
+	#calendar .weekdays {
+		background: #8e352e;  
+	}
+
+
+	#calendar .weekdays th {
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 20px;
+		border: none !important;
+		padding: 10px 6px;
+		color: #fff;
+		font-size: 13px;
+	}
+
+	#calendar td {
+		min-height: 180px;
+		display: flex;
+	flex-direction: column;
+	}
+
+	#calendar .days li:hover {
+		background: #d3d3d3;
+	}
+
+	#calendar .date {
+		text-align: center;
+		margin-bottom: 5px;
+		padding: 4px;
+		background: #333;
+		color: #fff;
+		width: 20px;
+		border-radius: 50%;
+		flex: 0 0 auto;
+		align-self: flex-end;
+	}
+
+	#calendar .date-other {
+		text-align: center;
+		margin-bottom: 5px;
+		padding: 4px;
+		background: #b8b7b7;
+		color: #fff;
+		width: 20px;
+		border-radius: 50%;
+		flex: 0 0 auto;
+		align-self: flex-end;
+	}
+
+
+	#calendar .event {
+		flex: 0 0 auto;
+		font-size: 13px;
+		border-radius: 4px;
+		padding: 5px;
+		margin-bottom: 5px;
+		line-height: 14px;
+		background: #e4f2f2;
+		border: 1px solid #b5dbdc;
+		color: #009aaf;
+		text-decoration: none;
+	}
+
+	#calendar .event-desc {
+		color: #666;
+		margin: 3px 0 7px 0;
+		text-decoration: none;	
+	}
+
+	#calendar .other-month {
+		background: #f5f5f5;
+		color: #666;
+	}
+
+
+    img {
+        width:80px;
+        height:100px;
+    }
+
+@media(max-width: 768px) {
+
+	#calendar .weekdays, #calendar .other-month {
+		display: none;
+	}
+
+	#calendar li {
+		height: auto !important;
+		border: 1px solid #ededed;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: -1px;
+	}
+  
+	#calendar, #calendar tr, #calendar tbody {
+			grid-template-columns: 1fr;
+	}
+	
+	#calendar  tr {
+			grid-column: 1 / 2;
+	}
+
+	#calendar .date {
+		align-self: flex-start;
+	}
+
+
+	.nav{
+		height: auto;
+	}
+
+	.nav .nav-title{
+		text-align: left;
+		width: 100%;
+	}
+
+	.nav .nav-menu{
+		width: 100%;
+	}
+
+	.nav .nav-menu ul{
+		justify-content: space-around;
+	}
+
+	.nav .nav-menu ul li{
+		width: 20%;
+		padding: 10px 0px;
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+	  
+	  .footer-distributed{
+		  background: #B95C50;
+		  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+		  box-sizing: border-box;
+		  width: 100%;
+		  text-align: left;
+		  font: bold 16px sans-serif;
+		  padding: 55px 50px;
+	  }
+	  
+	  .footer-distributed .footer-left,
+	  .footer-distributed .footer-center,
+	  .footer-distributed .footer-right{
+		  display: inline-block;
+		  vertical-align: top;
+	  }
+	  
+
+	  
+	  .footer-distributed .footer-left{
+		  width: 40%;
+	  }
+	  
+	
+	  
+	  .footer-distributed h3{
+		  color:  #ffffff;
+		  font: normal 36px 'Open Sans', cursive;
+		  margin: 0;
+	  }
+	  
+	  .footer-distributed h3 span{
+		  color:  rgb(255, 255, 255);
+	  }
+	  
+
+	  
+	  .footer-distributed .footer-links{
+		  color:  #ffffff;
+		  margin: 20px 0 12px;
+		  padding: 0;
+	  }
+	  
+	  .footer-distributed .footer-links a{
+		  display:inline-block;
+		  line-height: 1.8;
+		  font-weight:400;
+		  text-decoration: none;
+		  color:  inherit;
+	  }
+	  
+	  .footer-distributed .footer-company-name{
+		  color:  #222;
+		  font-size: 14px;
+		  font-weight: normal;
+		  margin: 0;
+	  }
+	  
+
+	  
+	  .footer-distributed .footer-center{
+		  width: 35%;
+	  }
+	  
+	  .footer-distributed .footer-center i{
+		  background-color:  #33383b;
+		  color: #ffffff;
+		  font-size: 25px;
+		  width: 38px;
+		  height: 38px;
+		  border-radius: 50%;
+		  text-align: center;
+		  line-height: 42px;
+		  margin: 10px 15px;
+		  vertical-align: middle;
+	  }
+	  
+	  .footer-distributed .footer-center i.fa-envelope{
+		  font-size: 17px;
+		  line-height: 38px;
+	  }
+	  
+	  .footer-distributed .footer-center p{
+		  display: inline-block;
+		  color: #ffffff;
+		font-weight:400;
+		  vertical-align: middle;
+		  margin:0;
+	  }
+	  
+	  .footer-distributed .footer-center p span{
+		  display:block;
+		  font-weight: normal;
+	
+		  font-size:14px;
+		  line-height:2;
+	  }
+	  
+	  .footer-distributed .footer-center p a{
+		  color:  rgb(241, 241, 241);
+		  text-decoration: none;;
+	  }
+	  
+	  .footer-distributed .footer-links a:before {
+		content: "|";
+		font-weight:300;
+		font-size: 20px;
+		left: 0;
+		color: #fff;
+		display: inline-block;
+		padding-right: 5px;
+	  }
+	  
+	  .footer-distributed .footer-links .link-1:before {
+		content: none;
+	  }
+	  
+	
+	  
+	  .footer-distributed .footer-right{
+		  width: 20%;
+	  }
+	  
+	  .footer-distributed .footer-company-about{
+		  line-height: 20px;
+		  color:  #92999f;
+		  font-size: 13px;
+		  font-weight: normal;
+		  margin: 0;
+	  }
+	  
+	  .footer-distributed .footer-company-about span{
+		  display: block;
+		  color:  #fffafa;
+		  font-size: 14px;
+		  font-weight: bold;
+		  margin-bottom: 20px;
+	  }
+	  
+	  .footer-distributed .footer-icons{
+		  margin-top: 25px;
+	  }
+	  
+	  .footer-distributed .footer-icons a{
+		  display: inline-block;
+		  width: 35px;
+		  height: 35px;
+		  cursor: pointer;
+		  background-color:  #33383b;
+		  border-radius: 2px;
+	  
+		  font-size: 20px;
+		  color: #ffffff;
+		  text-align: center;
+		  line-height: 35px;
+	  
+		  margin-right: 3px;
+		  margin-bottom: 5px;
+	  }
+	  
+
+	  
+
+	
